@@ -8,21 +8,15 @@ public class P_TreeConstructor {
 
     public static void main(String[] args) {
 
-        String[] strArr =  {"(1,2)", "(3,2)", "(2,12)", "(5,2)"};
-
-
+        String[] strArr = {"(1,2)", "(3,2)", "(2,12)", "(5,2)"};
 
         System.out.println(TreeConstructor(strArr));
-
 
 
     }
 
 
     public static String TreeConstructor(String[] strArr) {
-
-
-
 
 
         List<Integer> list = new ArrayList<>();
@@ -35,13 +29,11 @@ public class P_TreeConstructor {
             String[] parts = trimmed.split(",");
 
 
-
             String firstComponent = parts[0];
             list.add(Integer.valueOf(firstComponent));
 
             String secondComponent = parts[1];
             list1.add(Integer.valueOf(secondComponent));
-
 
 
         }
@@ -54,7 +46,6 @@ public class P_TreeConstructor {
 
         for (int i = 0; i < list.size(); i++) {
             for (int j = i + 1; j < list.size(); j++) {
-
 
 
                 if (list.get(i).equals(list.get(j))) {
@@ -80,9 +71,7 @@ public class P_TreeConstructor {
                         second = false;
                         break;
                     }
-
                 }
-
 
             }
             counterFirst = 1;
@@ -91,22 +80,13 @@ public class P_TreeConstructor {
         }
 
 
-<<<<<<< HEAD
         if (!first || !second) {
-=======
-        if (first == false || second == false) {
->>>>>>> origin/main
-
             return "false";
         }
 
         return "true";
 
 
-
-
-
     }
-
 
 }
