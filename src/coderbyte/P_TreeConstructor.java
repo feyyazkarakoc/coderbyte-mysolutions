@@ -91,7 +91,11 @@ public class P_TreeConstructor {
         }
 
 
+<<<<<<< HEAD
         if (!first || !second) {
+=======
+        if (first == false || second == false) {
+>>>>>>> origin/main
 
             return "false";
         }
