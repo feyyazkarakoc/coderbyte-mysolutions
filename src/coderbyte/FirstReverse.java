@@ -1,6 +1,6 @@
 package coderbyte;
 
-public class P_FirstReverse {
+public class FirstReverse {
 
 
     public static void main(String[] args) {
