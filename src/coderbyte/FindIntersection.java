@@ -33,7 +33,9 @@ class Main {
 
 
 
-    public static String FindIntersection(String[] strArr) {
+
+    // solution 2:
+    /*public static String FindIntersection(String[] strArr) {
         Set<String> set1 = new HashSet<>(Arrays.asList(strArr[0].replace(" ", "").split(",")));
         Set<String> result = new LinkedHashSet<>();
 
@@ -44,6 +46,22 @@ class Main {
         }
 
         return result.isEmpty() ? "false" : String.join(",", result);
+    }*/
+
+
+    public static String FindIntersection(String[] strArr) {
+        // code goes here
+
+
+        Set<String> set = new HashSet<>(List.of(strArr[0].replace(",","").split("")));
+        Set<String> result = new LinkedHashSet<>();
+        for(String str: strArr[1].replace(",","").split("")){
+            if(set.contains(str)){
+                result.add(str);
+            }
+        }
+        return result.isEmpty()?"false":String.join(",",result);
+
     }
 
 
