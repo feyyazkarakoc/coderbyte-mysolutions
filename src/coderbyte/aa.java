@@ -5,26 +5,70 @@ import java.util.Scanner;
 class Main20 {
 
 
-    // solution :
-    public static int NumberAddition(String str) {
+    // solution 1 :
+    /*public static int NumberAddition(String str) {
         // code goes here
         int sum = 0;
         StringBuilder num = new StringBuilder();
 
         for (char c : str.toCharArray()) {
             if (Character.isDigit(c)) {
-                num.append(c); // Rakamları birleştir
+                num.append(c);
             } else if (num.length() > 0) {
-                sum += Integer.parseInt(num.toString()); // Sayıyı topla
-                num.setLength(0); // Yeni sayılar için sıfırla
+                sum += Integer.parseInt(num.toString());
+                num.setLength(0);
             }
         }
-        if (num.length() > 0) { // Son sayıyı da ekleyelim
+        if (num.length() > 0) {
             sum += Integer.parseInt(num.toString());
         }
 
         return sum;
+    }*/
+
+
+    /*public static int NumberAddition(String str) {
+
+        int sum = 0;
+        StringBuilder num = new StringBuilder();
+        for (char ch : str.toCharArray()) {
+            if (Character.isDigit(ch)) {
+                num.append(ch);
+            } else if (num.length() > 0) {
+                sum += Integer.valueOf(num.toString());
+                num.setLength(0);
+            }
+        }
+
+        if (num.length() > 0) {
+            sum += Integer.valueOf(num.toString());
+        }
+
+        return sum;
+    }*/
+
+
+    // solution 2 :
+    /*public static int NumberAddition(String str) {
+        int sum = 0;
+        String[] arr = str.split("[\\D]+");
+        for (String s : arr) {
+            if (!s.isEmpty()) {
+                sum += Integer.valueOf(s);
+            }
+        }
+
+        return sum;
+    }*/
+
+
+
+
+    public static int NumberAddition(String str) {
+        int sum = 0;
+
     }
+
 
     public static void main(String[] args) {
         // keep this function call here
