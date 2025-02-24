@@ -62,12 +62,17 @@ class Main20 {
     }*/
 
 
-
-
     public static int NumberAddition(String str) {
         int sum = 0;
-
+        String[] arr = str.split("[^\\d]+");
+        for (String s : arr) {
+            if (!s.isEmpty()) {
+                sum += Integer.valueOf(s);
+            }
+        }
+        return sum;
     }
+
 
 
     public static void main(String[] args) {
