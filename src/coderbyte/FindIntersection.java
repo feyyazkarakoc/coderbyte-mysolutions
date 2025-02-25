@@ -67,16 +67,16 @@ class Main {
 
     public static String FindIntersection(String[] strArr) {
 
-        StringBuilder result = new StringBuilder();
 
-        Set<String> set = new LinkedHashSet<>(List.of(strArr[0].split(",")));
+        Set<String> set = new HashSet<>(List.of(strArr[0].split(", ")));
+        Set<String> result = new LinkedHashSet<>();
 
 
-        for (String s : strArr[1].split(",")) {
-            if (set.contains(s)) result.append(s);
+        for (String s : strArr[1].split(", ")) {
+            if (set.contains(s)) result.add(s);
         }
 
-        return result.isEmpty() ? "false" : String.join(",", result.toString().split(""));
+        return result.isEmpty() ? "false" : String.join(",", result);
 
     }
 
@@ -84,7 +84,7 @@ class Main {
     public static void main (String[] args) {
         // keep this function call here
         Scanner s = new Scanner(System.in);
-        System.out.print(FindIntersection(new String[]{"1, 3, 4, 7, 13", "1, 2, 4, 13, 15"}));
+        System.out.print(FindIntersection(new String[]{"1, 5, 6, 7, 10, 11, 12", "5, 6, 8, 11, 17"}));
     }
 
 }
