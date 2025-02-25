@@ -49,7 +49,7 @@ class Main {
     }*/
 
 
-    public static String FindIntersection(String[] strArr) {
+   /* public static String FindIntersection(String[] strArr) {
         // code goes here
 
 
@@ -61,6 +61,22 @@ class Main {
             }
         }
         return result.isEmpty()?"false":String.join(",",result);
+
+    }*/
+
+
+    public static String FindIntersection(String[] strArr) {
+
+        StringBuilder result = new StringBuilder();
+
+        Set<String> set = new LinkedHashSet<>(List.of(strArr[0].split(",")));
+
+
+        for (String s : strArr[1].split(",")) {
+            if (set.contains(s)) result.append(s);
+        }
+
+        return result.isEmpty() ? "false" : String.join(",", result.toString().split(""));
 
     }
 

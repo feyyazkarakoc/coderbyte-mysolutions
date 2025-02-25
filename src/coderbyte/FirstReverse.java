@@ -72,9 +72,15 @@ public class FirstReverse {
 
 
 
-    public static String FirstReverse(String str) {
+    /*public static String FirstReverse(String str) {
         return new StringBuilder(str).reverse().toString();
+    }*/
+
+
+    public static String FirstReverse(String str) {
+       return new StringBuilder(str).reverse().toString();
     }
+
 
 
 

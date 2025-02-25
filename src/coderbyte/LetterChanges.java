@@ -40,7 +40,7 @@ class Main2 {
         return sb.toString();
     }*/
 
-    public static String LetterChanges(String str) {
+   /* public static String LetterChanges(String str) {
         StringBuilder sb = new StringBuilder();
         for(char ch : str.toCharArray()){
             if(Character.isLetter(ch)){
@@ -50,6 +50,25 @@ class Main2 {
                 sb.append(ch);
             }
         }
+        return sb.toString();
+    }*/
+
+
+    public static String LetterChanges(String str) {
+
+        StringBuilder sb = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+
+            if (Character.isLetter(ch)) {
+                char nextChar = ch == 'Z' ? 'A' : ch == 'z' ? 'a' : (char) (ch + 1);
+                sb.append("aeiou".indexOf(nextChar) != -1 ? Character.toUpperCase(nextChar) : nextChar);
+
+            } else {
+                sb.append(ch);
+            }
+        }
+
         return sb.toString();
     }
 

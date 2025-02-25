@@ -34,7 +34,7 @@ public class LongestWord {
 
     // solution 2:
 
-    public static String LongestWord(String sen) {
+    /*public static String LongestWord(String sen) {
        int maxLen = 0;
        String maxLenWord = "";
        String[] words = sen.replaceAll("[^A-Za-z0-9\\s]","").split("\\s+");
@@ -45,6 +45,28 @@ public class LongestWord {
            }
        }
        return maxLenWord;
+    }*/
+
+
+
+
+
+    public static String LongestWord(String sen){
+
+        String[] str = sen.toLowerCase().replaceAll("[^0-9a-z\\s]","").split("\\s+");
+
+        String longestWord="";
+        int maxWordLen = 0;
+
+        for(String s : str){
+            if(s.length()>maxWordLen){
+                longestWord=s;
+                maxWordLen=s.length();
+
+            }
+        }
+
+        return longestWord;
     }
 
 
