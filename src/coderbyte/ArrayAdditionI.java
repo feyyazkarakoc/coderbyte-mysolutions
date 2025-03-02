@@ -27,7 +27,7 @@ class Main18 {
     }*/
 
 
-   /* public static String ArrayAdditionI(int[] arr) {
+   public static String ArrayAdditionI(int[] arr) {
 
         int target = Arrays.stream(arr).sorted().toArray()[arr.length - 1];
         int[] newArr = Arrays.stream(arr).filter(n -> n != target).toArray();
@@ -42,41 +42,8 @@ class Main18 {
 
         if (ArrayAdditionIHelper(arr, index + 1, target - arr[index])) return true;
         return ArrayAdditionIHelper(arr, index + 1, target);
-    }*/
-
-
-
-
-    // solution 2 :
-    public static String ArrayAdditionI(int[] arr) {
-
-        int target = Arrays.stream(arr).max().getAsInt();
-
-        int[] nums = Arrays.stream(arr).filter(n -> n != target).toArray();
-
-        boolean[][] dp = new boolean[nums.length + 1][target + 1];
-
-
-        for (int i = 0; i <= nums.length; i++) {
-            dp[i][0] = true;
-        }
-
-
-        for (int i = 1; i <= nums.length; i++) {
-            for (int j = 1; j <= target; j++) {
-
-                if (nums[i - 1] > j) {
-                    dp[i][j] = dp[i - 1][j];
-                } else {
-
-                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - nums[i - 1]];
-                }
-            }
-        }
-
-
-        return dp[nums.length][target] ? "true" : "false";
     }
+
 
 
 
@@ -91,10 +58,3 @@ class Main18 {
 
 
 
-
-/*Array Addition I
-Have the function ArrayAdditionI(arr) take the array of numbers stored in arr and return the string true if any
-combination of numbers in the array (excluding the largest number) can be added up to equal the largest number in
-the array, otherwise return the string false. For example: if arr contains [4, 6, 23, 10, 1, 3] the output should
-return true because 4 + 6 + 10 + 3 = 23. The array will not be empty, will not contain all the same elements, and may
-contain negative numbers.*/
