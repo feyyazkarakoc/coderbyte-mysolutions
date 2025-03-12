@@ -30,3 +30,12 @@ class Main19 {
     }
 
 }
+
+
+/*Bu fonksiyon, verilen str içinde belirli bir deseni kontrol eder:
+
+Tüm harfleri küçük harfe çevirir (ancak döngü içinde tekrar tekrar yapılıyor, bu gereksiz).
+Döngüyle tüm karakterleri tek tek kontrol eder.
+Eğer bir 'a' harfi bulunursa, 4 karakter sonrasında bir 'b' harfi olup olmadığına bakar ve aradaki 3 karakterde 'b' harfi olmamasını şart koşar.
+Aynı şekilde, eğer bir 'b' harfi bulunursa, 4 karakter sonrasında bir 'a' harfi olup olmadığına bakar ve aradaki 3 karakterde 'a' harfi olmamasını şart koşar.
+Eğer yukarıdaki şartlardan biri sağlanırsa "true" döndürür, aksi halde "false" döndürür.*/
