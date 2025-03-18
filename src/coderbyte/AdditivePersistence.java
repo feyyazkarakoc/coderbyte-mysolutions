@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main11 {
+class AdditivePersistence {
 
 
     // solution :

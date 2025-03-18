@@ -3,7 +3,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main16 {
+class CountingMinutesI {
 
 
     // solution :

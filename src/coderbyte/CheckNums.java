@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main15 {
+class CheckNums {
 
     public static String CheckNums(int num1, int num2) {
         // code goes here

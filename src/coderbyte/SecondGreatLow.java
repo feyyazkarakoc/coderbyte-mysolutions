@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-class Main10 {
+class SecondGreatLow {
 
 
     // solution 1:

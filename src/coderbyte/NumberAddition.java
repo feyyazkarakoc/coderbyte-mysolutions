@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main20 {
+class NumberAddition {
 
 
     // solution 1 :

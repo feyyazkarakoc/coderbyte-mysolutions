@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main6 {
+class LetterCapitalize {
 
 
     // solution 1:

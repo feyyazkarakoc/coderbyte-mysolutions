@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.*;
 
-class Main {
+class FindIntersection {
 
     // solution 1:
     /*public static String FindIntersection(String[] strArr) {

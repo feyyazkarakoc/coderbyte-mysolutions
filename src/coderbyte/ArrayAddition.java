@@ -3,7 +3,7 @@ package coderbyte;
 import java.util.*;
 
 
-class Main21 {
+class ArrayAddition {
 
     public static String ArrayAddition(int[] arr) {
         // code goes here

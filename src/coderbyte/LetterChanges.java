@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-class Main2 {
+class LetterChanges {
 
 
     // solution :

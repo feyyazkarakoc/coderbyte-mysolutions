@@ -4,7 +4,7 @@ package coderbyte;
 import java.util.*;
 
 
-class Main23 {
+class Consecutive {
 
 
     // solution 1:

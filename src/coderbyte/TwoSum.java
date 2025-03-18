@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.*;
 
-class Main14 {
+class TwoSum {
 
 
     // solution 1:

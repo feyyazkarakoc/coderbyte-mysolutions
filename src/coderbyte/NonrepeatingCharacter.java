@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.*;
 
-class Main12 {
+class NonrepeatingCharacter {
 
 
     // solutiion 1:

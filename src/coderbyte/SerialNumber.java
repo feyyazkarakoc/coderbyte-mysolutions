@@ -3,7 +3,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main3 {
+class SerialNumber {
 
 
     // solution:

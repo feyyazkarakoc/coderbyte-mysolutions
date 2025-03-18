@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main1 {
+class FirstFactorial {
 
     public static int FirstFactorial(int num) {
         // code goes here

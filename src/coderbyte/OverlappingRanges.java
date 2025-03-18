@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.*;
 
-class Main9 {
+class OverlappingRanges {
 
 
     // solution :

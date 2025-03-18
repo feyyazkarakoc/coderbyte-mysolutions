@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main7 {
+class SimpleSymbols {
 
     public static String SimpleSymbols(String str) {
         // code goes here

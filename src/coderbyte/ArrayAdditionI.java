@@ -3,10 +3,10 @@ package coderbyte;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Main18 {
+class ArrayAdditionI {
 
 
-    // solution 1 :
+    // solution  :
     /*public static String ArrayAdditionI(int[] arr) {
         // code goes here
         int target = Arrays.stream(arr).sorted().toArray()[arr.length - 1];

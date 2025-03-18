@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main24 {
+class VowelCount {
 
     // solution 1:
     /*public static int VowelCount(String str) {

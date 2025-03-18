@@ -3,7 +3,7 @@ package coderbyte;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Main13 {
+class LargestFour {
 
 
     // solution :

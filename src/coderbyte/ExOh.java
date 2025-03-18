@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main8 {
+class ExOh {
 
     public static String ExOh(String str) {
         // code goes here

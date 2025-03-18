@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main4 {
+class QuestionsMarks {
 
 
     // solution:

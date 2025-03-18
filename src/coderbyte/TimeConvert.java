@@ -2,7 +2,7 @@ package coderbyte;
 
 import java.util.Scanner;
 
-class Main17 {
+class TimeConvert {
 
     public static String TimeConvert(int num) {
         // code goes here
